@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/*
+GENERAL STYLES
+*/
+button {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #2E3440;
+    border-radius: 5px;
+}
+
+.current-mode {
+    background-color: #2E3440;
+    color: #D8DEE9;
+}
+
+/*
+TYPOGRAPHY
+*/
+html {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    font-size: 75px;
+    font-weight: 900;
+}
+
+
+footer {
+    font-size: 20px;
+}
+
+.grid-size {
+    font-size: 20px;
+}
+
+/*
+COLOURS
+*/
+html {
+    background-color: #D8DEE9;
+}
+
+h1 {
+    color: #2E3440;
+}
+
+button:hover {
+    background-color: #2E3440;
+    color: #D8DEE9;
+}
+
+.grid {
+    background-color: #ECEFF4;
+}
+
+.size-range {
+    background-color: #ECEFF4;
+    color: red;
+}
+
+/*
+HEADER
+*/
+header {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 35px 0 20px 0;
+}
+
+.title-container {
+    width: 1150px;
+}
+
+/*
+MAIN
+*/
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*
+SETTINGS & GRID
+*/
+.grid-settings-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    width: 1150px;
+    height: 500px;
+}
+
+.grid {
+    height: 100%;
+    width: 500px;
+    box-shadow: 0 3px 10px #4C566A;
+}
+
+.settings {
+    height: 100%;
+    width: 20%;
+}
+
+.settings * {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.color-picker {
+    margin-top: 25px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.size-range {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 200px;
+    height: 15px;
+    border: solid 1px #4C566A;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    border-radius: 50%;
+    background-color: #4C566A;
+    height: 1.5rem;
+    width: 1.5rem;    
+ }
+
+
+/*
+FOOTER
+*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 13px 0;
+}
