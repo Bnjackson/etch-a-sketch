@@ -10,10 +10,28 @@
     </head>
     <body>
         <header>
+            <div class="title-container">
+                <h1>Etch-a-sketch</h1>
+            </div>
         </header>
         <main>
+            <div class="grid-settings-container">
+                <div class="settings">
+                    <input type="color">
+                    <button class="color-button" id="color-button">Color</button>
+                    <button class="rainbow-button" id="rainbow-button">Rainbow</button>
+                    <button class="eraser-button" id="eraser-button">Eraser</button>
+                    <button class="clear-button" id="clear-button">Clear</button>
+                    <p class="grid-size" id="grid-size">Placeholder</p>
+                    <input class="size-range" id="size-range" type="range" min="1" max="64">
+                </div>
+                <div class="grid" id="grid">
+
+                </div>
+            </div>
         </main>
         <footer>
+            <p>2023 <a href="https://github.com/Bnjackson?tab=overview&from=2023-11-01&to=2023-11-27">Benjamin Jackson</a></p>
         </footer>
     </body>
     <script src="./main.js"></script>
