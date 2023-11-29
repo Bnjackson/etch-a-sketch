@@ -27,12 +27,15 @@ h1 {
     font-weight: 900;
 }
 
-
 footer {
     font-size: 20px;
 }
 
 .grid-size {
+    font-size: 20px;
+}
+
+.range-label {
     font-size: 20px;
 }
 
@@ -58,7 +61,6 @@ button:hover {
 
 .size-range {
     background-color: #ECEFF4;
-    color: red;
 }
 
 /*
@@ -98,6 +100,14 @@ SETTINGS & GRID
     height: 100%;
     width: 500px;
     box-shadow: 0 3px 10px #4C566A;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.grid-item {
+    border: 1px solid black;
+    aspect-ratio: 1;
 }
 
 .settings {
@@ -122,6 +132,10 @@ SETTINGS & GRID
     outline: none;
 }
 
+.range-label {
+    margin-bottom: 5px;
+}
+
 .size-range {
     appearance: none;
     -webkit-appearance: none;
@@ -138,8 +152,7 @@ input[type="range"]::-webkit-slider-thumb {
     background-color: #4C566A;
     height: 1.5rem;
     width: 1.5rem;    
- }
-
+}
 
 /*
 FOOTER
