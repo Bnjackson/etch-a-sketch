@@ -17,16 +17,15 @@
         <main>
             <div class="grid-settings-container">
                 <div class="settings">
-                    <input type="color">
-                    <button class="color-button" id="color-button">Color</button>
-                    <button class="rainbow-button" id="rainbow-button">Rainbow</button>
-                    <button class="eraser-button" id="eraser-button">Eraser</button>
-                    <button class="clear-button" id="clear-button">Clear</button>
-                    <p class="grid-size" id="grid-size">Placeholder</p>
-                    <input class="size-range" id="size-range" type="range" min="1" max="64">
+                    <input class="color-picker" id="colorPicker" type="color">
+                    <button class="color-button" id="colorButton">Color</button>
+                    <button class="rainbow-button" id="rainbowButton">Rainbow</button>
+                    <button class="eraser-button" id="eraserButton">Eraser</button>
+                    <button class="clear-button" id="clearButton">Clear</button>
+                    <label for="range-input" id="rangeLabel"></label>
+                    <input class="size-range" id="rangeInput" type="range" value="16" min="1" max="64" step="1">
                 </div>
                 <div class="grid" id="grid">
-
                 </div>
             </div>
         </main>
