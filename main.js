@@ -28,8 +28,6 @@ function addEventHandlers() {
     grid.addEventListener('mouseup', handleMouseUp);
     grid.addEventListener('mouseover', handleMouseOver);
     grid.addEventListener('mouseleave', handleMouseLeave);
-    grid.addEventListener('click', handleMouseClick);
-
 }
 
 colorButtons.forEach((button) => {
@@ -76,9 +74,6 @@ function handleMouseLeave() {
     isMouseDown = false;
 }
 
-function handleMouseClick(event) {
-    changeColor(event.target);
-}
 
 function changeColor(item) {
     if (colourMode === 'colourPicker') {
