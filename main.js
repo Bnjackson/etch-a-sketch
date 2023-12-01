@@ -24,7 +24,6 @@ gridRange.addEventListener('input', () => {
 
 clearButton.addEventListener('click', () => {
     // Call createGrid function with rangeInput.value
-    console.log(gridRange.value);
     createGrid(gridRange.value);
 });
 
@@ -80,7 +79,7 @@ function handleMouseLeave() {
     isMouseDown = false;
 }
 
-
+// Change the color of the grid item based on the selected color mode
 function changeColor(item) {
     if (colourMode === 'colourPicker') {
         item.style.backgroundColor = selectedColor;
@@ -91,6 +90,7 @@ function changeColor(item) {
     }
 }
 
+// Change the color mode based on the clicked button and update the active button
 function changeColorMode(target) {
     colourButton.classList.remove('current-mode');
     rainbowButton.classList.remove('current-mode');
