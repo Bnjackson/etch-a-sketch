@@ -106,8 +106,8 @@ SETTINGS & GRID
 }
 
 .grid-item {
-    border: 1px solid black;
     aspect-ratio: 1;
+    background-color: white;
 }
 
 .settings {
