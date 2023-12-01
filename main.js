@@ -22,6 +22,12 @@ gridRange.addEventListener('input', () => {
     createGrid(rangeInput.value);
 });
 
+clearButton.addEventListener('click', () => {
+    // Call createGrid function with rangeInput.value
+    console.log(gridRange.value);
+    createGrid(gridRange.value);
+});
+
 function addEventHandlers() {
     // Add event listeners to listen for when the mouse is dragged over the grid, and the state of the mouse 
     grid.addEventListener('mousedown', handleMouseDown);
@@ -106,7 +112,6 @@ function generateRandomColour() {
     const red = Math.floor(Math.random() * 255);
     const blue = Math.floor(Math.random() * 255);
     const green = Math.floor(Math.random() * 255);
-    console.log(`rgb(${red}, ${green}, ${blue})`);
     return `rgb(${red}, ${green}, ${blue})`;
 }
 
